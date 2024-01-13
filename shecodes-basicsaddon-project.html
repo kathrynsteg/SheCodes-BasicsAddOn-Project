@@ -4,43 +4,114 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Improv Comedy</title>
+    <style>
+      body {
+        background: black;
+      }
+      h1 {
+        font-size: 38px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        text-align: center;
+      }
+      .chairs {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 18px;
+        width: 300px;
+      }
+      p {
+        font-size: 18px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        text-align: center;
+      }
+      a {
+        color: red;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        border: 1px black;
+        background: red;
+        color: white;
+        font-size: 14px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        border-radius: 6px;
+        padding: 6px 10px;
+        transition: all 50ms ease-in-out;
+      }
+      button:hover {
+        background: #272727;
+        cursor: pointer;
+      }
+      footer {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 16px;
+      }
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 6px;
+      }
+
+      .image-gallery img {
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
-    <h1>Improv Comedy</h1>
-    <h2>at Chicago's Second City</h2>
-    <img
-      src="https://assets-global.website-files.com/5ae8c835bd897978d659840c/5ccaf5f5c0662fba9459f809_SC_Four_Chairs.jpg"
-      alt=""
-    />
-    <p>
-      The Second City is an improvisational comedy enterprise. It's the oldest
-      improvisational theater troupe to be continuously based in Chicago and has
-      become one of the most influential and prolific comedy theatres in the
-      English-speaking world.
-      <br />
-      <br />
-      Improvisational theatre, often called improvisation or improv, is the form
-      of theatre, often comedy, in which most or all of what is performed is
-      unplanned or unscripted, created spontaneously by the performers. In its
-      purest form, the dialogue, action, story, and characters are created
-      collaboratively by the players as the improvisation unfolds in present
-      time, without use of an already prepared, written script.
-    </p>
-    <div class="image-gallery">
+    <div class="container">
+      <h1>
+        Improv Comedy
+        <div style="font-size: 75%; font-style: italic">
+          at Chicago's Second City
+        </div>
+      </h1>
       <img
-        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/5f/e8/c8/the-historical-second.jpg?w=900&h=400&s=1"
+        src="https://assets-global.website-files.com/5ae8c835bd897978d659840c/5ccaf5f5c0662fba9459f809_SC_Four_Chairs.jpg"
         alt=""
+        class="chairs"
       />
-      <img
-        src="https://www.secondcity.com/wp-content/uploads/2017/11/September-1982-%E2%80%98SCTV%E2%80%99-takes-home-an-Emmy-1.jpg"
-        alt=""
-      />
-      <img
-        src="https://nypost.com/wp-content/uploads/sites/2/2022/10/second-city-chicago-new-york-07.jpeg?resize=1024,537&quality=75&strip=all"
-        alt=""
-      />
+      <p>
+        The Second City is an
+        <a href="https://en.wikipedia.org/wiki/The_Second_City"
+          >improvisational comedy enterprise</a
+        >. It's the oldest improvisational theater troupe to be continuously
+        based in Chicago and has become one of the most influential and prolific
+        comedy theatres in the English-speaking world.
+        <br />
+        <br />
+        Improvisation is a form of theatre, often comedy, in which most or all
+        of what is performed is unplanned and created spontaneously by the
+        performers. In its purest form, the dialogue, action, story, and
+        characters are created collaboratively by the players as the scene
+        unfolds in present time, without use of an already prepared, written
+        script.
+      </p>
+      <div class="image-gallery">
+        <img
+          src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/5f/e8/c8/the-historical-second.jpg?w=900&h=400&s=1"
+          alt=""
+          class="theater"
+        />
+        <img
+          src="https://www.secondcity.com/wp-content/uploads/2017/11/September-1982-%E2%80%98SCTV%E2%80%99-takes-home-an-Emmy-1.jpg"
+          alt=""
+          class="cast"
+        />
+        <img
+          src="https://nypost.com/wp-content/uploads/sites/2/2022/10/second-city-chicago-new-york-07.jpeg?resize=1024,537&quality=75&strip=all"
+          alt=""
+          class="stage"
+        />
+      </div>
+      <button>Dark Theme</button>
     </div>
-    <button>Dark Theme</button>
     <footer>Coded by Kathryn Stegeman</footer>
   </body>
 </html>
