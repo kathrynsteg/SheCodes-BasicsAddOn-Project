@@ -6,7 +6,7 @@
     <title>Improv Comedy 🎭</title>
     <style>
       body {
-        background: black;
+        background: red;
       }
       .container {
         max-width: 600px;
@@ -20,6 +20,7 @@
         font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
           "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
         text-align: center;
+        margin-top: 10px;
       }
       .chairs-picture {
         display: block;
@@ -53,6 +54,9 @@
         height: 100px;
         border-radius: 6px;
       }
+      .image-gallery img:hover {
+        transform: scale(200%);
+      }
       button {
         display: block;
         margin: 0 auto;
@@ -71,9 +75,23 @@
         cursor: pointer;
       }
       footer {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
         text-align: center;
-        margin: 10px 0;
-        font-size: 16px;
+        margin-top: 20px;
+        font-size: 14px;
+      }
+      .dark {
+        background: black;
+      }
+      .dark .container {
+        background-color: gray;
+      }
+      .dark a {
+        color: white;
+      }
+      .dark button {
+        background-color: black;
       }
     </style>
   </head>
@@ -124,8 +142,23 @@
           class="stage"
         />
       </div>
-      <button>Dark Theme</button>
+      <button class="dark-theme">Dark Theme</button>
+      <footer>
+        Coded by Kathryn Stegeman and published on
+        <a href="https://github.com/kathrynsteg/SheCodes-BasicsAddOn-Project"
+          >GitHub</a
+        >
+      </footer>
     </div>
-    <footer>Coded by Kathryn Stegeman</footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        body.classList.toggle("dark");
+      }
+
+      let darkTheme = document.querySelector(".dark-theme");
+      darkTheme.addEventListener("click", changeTheme);
+    </script>
   </body>
 </html>
