@@ -3,10 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Improv Comedy</title>
+    <title>Improv Comedy 🎭</title>
     <style>
       body {
         background: black;
+      }
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 6px;
       }
       h1 {
         font-size: 38px;
@@ -14,20 +21,30 @@
           "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
         text-align: center;
       }
-      .chairs {
+      .chairs-picture {
         display: block;
         margin: 0 auto;
-        padding-bottom: 18px;
         width: 300px;
+        border-radius: 6px;
+        transition: all 50ms ease-in-out;
+      }
+      .chairs-picture:hover {
+        opacity: 0.8;
+        transform: scale(102%);
       }
       p {
         font-size: 18px;
         font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
           "Lucida Sans", Arial, sans-serif;
         text-align: center;
+        margin-top: 28px;
       }
       a {
         color: red;
+      }
+      .image-gallery img {
+        width: 100%;
+        border-radius: 6px;
       }
       button {
         display: block;
@@ -43,24 +60,13 @@
         transition: all 50ms ease-in-out;
       }
       button:hover {
-        background: #272727;
+        background: #ff0000b3;
         cursor: pointer;
       }
       footer {
         text-align: center;
         margin: 10px 0;
         font-size: 16px;
-      }
-      .container {
-        max-width: 600px;
-        margin: 20px auto;
-        background: white;
-        padding: 20px;
-        border-radius: 6px;
-      }
-
-      .image-gallery img {
-        width: 100%;
       }
     </style>
   </head>
@@ -72,11 +78,12 @@
           at Chicago's Second City
         </div>
       </h1>
-      <img
-        src="https://assets-global.website-files.com/5ae8c835bd897978d659840c/5ccaf5f5c0662fba9459f809_SC_Four_Chairs.jpg"
-        alt=""
-        class="chairs"
-      />
+      <a href="https://www.secondcity.com/">
+        <img
+          src="https://assets-global.website-files.com/5ae8c835bd897978d659840c/5ccaf5f5c0662fba9459f809_SC_Four_Chairs.jpg"
+          alt=""
+          class="chairs-picture"
+      /></a>
       <p>
         The Second City is an
         <a href="https://en.wikipedia.org/wiki/The_Second_City"
